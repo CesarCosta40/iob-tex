@@ -27,7 +27,7 @@ figures:
 
 fpga_res:
 ifeq ($(XILINX),1)
-	cp $($(CORE_NAME)_HW_DIR)/fpga/vivado/XCKU/vivado.log .
+	cp $($(CORE_NAME)_HW_DIR)/fpga/vivado/$(FPGA_FAMILY)/vivado.log .
 endif
 ifeq ($(INTEL),1)
 	cp $($(CORE_NAME)_HW_DIR)/fpga/quartus/CYCLONEV-GT/quartus.log .
